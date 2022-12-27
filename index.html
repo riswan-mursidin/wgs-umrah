@@ -879,7 +879,92 @@
             </div>
           </div>
           <div class="col-md-6 p-0">
-            <div id="map" class="half-map bg-img-map"></div>
+            <!-- <div id="map" class="half-map bg-img-map"></div> -->
+
+            <!--Contact Start-->
+            <section>
+              <div class="container">
+                <!--Heading-->
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="title d-inline-block">
+                      <h6 class="mb-3 third-color">Kontak Kami</h6>
+                      <h2>Hubungi kami untuk konsultasi :</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <!--contact us-->
+
+                <form
+                  class="contact-form"
+                  action="https://api.whatsapp.com/send"
+                  method="get"
+                >
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="col-md-12 col-sm-12">
+                        <div class="form-group">
+                          <input
+                            class="form-control"
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Nama Lengkap"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-sm-12">
+                        <div class="form-group">
+                          <input
+                            class="form-control"
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Email"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-sm-12">
+                        <div class="form-group">
+                          <input
+                            type="hidden"
+                            id="phone"
+                            name="phone"
+                            value="+6287854442438"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 col-sm-12">
+                        <div class="form-group">
+                          <textarea
+                            class="form-control"
+                            id="message"
+                            name="text"
+                            placeholder="Masukkan Pesan"
+                          ></textarea>
+                        </div>
+                      </div>
+
+                      <input type="hidden" name="source" value="contact_form" />
+                      <button
+                        type="submit"
+                        class="btn btn-large btn-gradient btn-rounded mt-4"
+                        value="Kirim Pesan"
+                      >
+                        <i
+                          class="fa fa-spinner fa-spin mr-2 d-none"
+                          aria-hidden="true"
+                        ></i>
+                        <span>Kirim Pesan</span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </section>
+            <!--Contact End-->
           </div>
         </div>
       </div>
@@ -914,94 +999,6 @@
       </div>
     </section>
     <!--Portfolio end-->
-
-    <!--Contact Start-->
-    <section>
-      <div class="container">
-        <!--Heading-->
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <div class="title d-inline-block">
-              <h6 class="mb-3 third-color">Kontak Kami</h6>
-              <h2>
-                Hubungi kami jika ada pertanyaan melalui form whatsapp dibawah
-                ini
-              </h2>
-            </div>
-          </div>
-        </div>
-
-        <!--contact us-->
-
-        <form
-          class="contact-form"
-          action="https://api.whatsapp.com/send"
-          method="get"
-        >
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="col-md-12 col-sm-12">
-                <div class="form-group">
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Nama Lengkap"
-                  />
-                </div>
-              </div>
-              <div class="col-md-12 col-sm-12">
-                <div class="form-group">
-                  <input
-                    class="form-control"
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                  />
-                </div>
-              </div>
-              <div class="col-md-12 col-sm-12">
-                <div class="form-group">
-                  <input
-                    type="hidden"
-                    id="phone"
-                    name="phone"
-                    value="+6287854442438"
-                  />
-                </div>
-              </div>
-
-              <div class="col-md-12 col-sm-12">
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    name="text"
-                    placeholder="Masukkan Pesan"
-                  ></textarea>
-                </div>
-              </div>
-
-              <input type="hidden" name="source" value="contact_form" />
-              <button
-                type="submit"
-                class="btn btn-large btn-gradient btn-rounded mt-4"
-                value="Kirim Pesan"
-              >
-                <i
-                  class="fa fa-spinner fa-spin mr-2 d-none"
-                  aria-hidden="true"
-                ></i>
-                <span>Kirim Pesan</span>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!--Contact End-->
 
     <!--Footer Start-->
     <section class="bg-light text-center">
