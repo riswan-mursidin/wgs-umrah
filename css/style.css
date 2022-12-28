@@ -397,6 +397,16 @@ a {
   border-color: #ffffff;
   color: #585858 !important;
 }
+/* Table PRovinsi */
+
+.background-gradient {
+  font: bolder;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #21752c 0%, #21752c 0%);
+}
+#search {
+  display: none;
+}
 
 /* ===================================
    Social Icon Hover

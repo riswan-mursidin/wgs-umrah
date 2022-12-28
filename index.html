@@ -504,84 +504,43 @@
           <div class="col-md-6 mb-4">
             <h6 class="mb-3">Perwakilan</h6>
             <h2 class="gradient-text1 mb-3">Daftar Perwakilan WGS</h2>
-            <table class="table table-striped">
+            <!-- form search -->
+            <form for="search">
+              <input
+                type="text"
+                id="search"
+                name="search"
+                placeholder="Cari Provinsi.."
+                class="form-control"
+              />
+            </form>
+
+            <table id="provinsi-table" class="table table-striped">
               <thead>
                 <tr>
                   <th scope="col">Provinsi</th>
                   <th scope="col">No Urut</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td>Aceh</td>
-                  <td>10</td>
-                </tr>
-                <tr>
-                  <td>Sumatera Utara</td>
-                  <td>9</td>
-                </tr>
-                <tr>
-                  <td>Sumatera Selatan</td>
-                  <td>14</td>
-                </tr>
-                <tr>
-                  <td>Lampung</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>DKI Jakarta</td>
-                  <td>13</td>
-                </tr>
-                <tr>
-                  <td>Jawa Barat - A</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td>Jawa Barat - B</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>Jawa Barat - C</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Banten</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Jawa Timur - A</td>
-                  <td>7</td>
-                </tr>
-                <tr>
-                  <td>Jawa Timur - B</td>
-                  <td>8</td>
-                </tr>
-                <tr>
-                  <td>Bali</td>
-                  <td>11</td>
-                </tr>
-                <tr>
-                  <td>Nusa Tenggara Timur</td>
-                  <td>11</td>
-                </tr>
-                <tr>
-                  <td>Nusa Tenggara Barat</td>
-                  <td>12</td>
-                </tr>
-                <tr>
-                  <td>Sulawesi Utara</td>
-                  <td>5</td>
-                </tr>
-                <tr>
-                  <td>Sulawesi Tengah</td>
-                  <td>5</td>
-                </tr>
-                <tr>
-                  <td>Sulawesi Selatan</td>
-                  <td>6</td>
-                </tr>
-              </tbody>
+              <tbody></tbody>
             </table>
+            <!-- Tombol prev dan next -->
+            <div id="pagination">
+              <button
+                class="btn btn-sm btn-rounded btn-gradient"
+                id="prev-btn"
+                onclick="prevPage()"
+              >
+                Prev
+              </button>
+              <button
+                class="btn btn-sm btn-rounded btn-gradient"
+                id="next-btn"
+                onclick="nextPage()"
+              >
+                Next
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1081,5 +1040,6 @@
     <script src="js/map.js"></script>
     <!-- custom script -->
     <script src="js/script.js"></script>
+    <script src="js/dataTable.js"></script>
   </body>
 </html>
